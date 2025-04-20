@@ -1,5 +1,6 @@
 import house from "../../../assets/images/img1.jpg";
 import Image from "next/image";
+import Button from "../../ui/button";
 
 export const About = () => {
   const section = [
@@ -51,9 +52,7 @@ export const About = () => {
             looking to renovate your home, design a new space, or create a
             unique commercial environment, we are here to help.
           </p>
-          <button className="hover:border-teal-mine rounded-md border border-gray-500 px-4 py-3 transition-colors">
-            Learn more about us
-          </button>
+          <Button text="Learn more about us" />
         </div>
       </section>
     </article>
