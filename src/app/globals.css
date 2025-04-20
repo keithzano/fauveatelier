@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+@theme {
+--font-body: 'Manrope', sans-serif;
+--font-display: 'Playfair Display', serif;
+--color-teal-mine: #00585E;
+--color-teal-mine-light: #007C8C;
+--color-teal-mine-dark: #003D43;
+}
+
+
+body {
+  font-family: Manrope, Playfair Arial, Helvetica, sans-serif;
+}
