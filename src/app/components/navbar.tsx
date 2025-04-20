@@ -4,10 +4,11 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Services", href: "#", current: false },
+  { name: "Home", href: "/", current: true },
+  { name: "Services", href: "/services", current: false },
   { name: "Meet the Team", href: "#", current: false },
   { name: "Get in Touch", href: "#", current: false },
 ];
@@ -48,7 +49,7 @@ export const Navbar = () => {
           <div className="hidden sm:ml-6 sm:block">
             <div className="flex space-x-4">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   aria-current={item.current ? "page" : undefined}
@@ -60,7 +61,7 @@ export const Navbar = () => {
                   )}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
