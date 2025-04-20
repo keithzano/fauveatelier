@@ -12,4 +12,5 @@
 
 body {
   font-family: Manrope, Playfair Arial, Helvetica, sans-serif;
+  background-color: var(--color-neutral-100);
 }
