@@ -23,11 +23,13 @@ export const Navbar = () => {
       <div className="mx-auto px-2.5 sm:px-4 md:px-6 lg:px-10">
         <div className="flex h-16 items-center justify-between">
           <div className="flex shrink-0 items-center">
-            <img
-              alt="Fauve Atelier"
-              src="images/logo1.jpg"
-              className="h-12 w-auto"
-            />
+            <Link href="/">
+              <img
+                alt="Fauve Atelier"
+                src="images/logo1.jpg"
+                className="h-12 w-auto"
+              />
+            </Link>
           </div>
 
           <div className="flex items-center sm:hidden">
